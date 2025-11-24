@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio">
+  <title>Paulo Martins – Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="logo">Paulo Colodiano</div>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#experiencias">Carreira</a></li>
+        <li><a href="https://www.linkedin.com/in/martins-paulo" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/PauloColodiano" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="curriculo.pdf" target="_blank"><i class="fas fa-file-alt"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introducao" class="introducao">
+      <h1>Olá, bem-vindo!</h1>
+      <h2>Eu sou o Paulo Colodiano,</h2>
+      <p>Desenvolvedor em construção, criei esse site para apresentar um pouco sobre meus projetos, experiências adquiridas ao longo desses anos e um pouco sobre mim!</p>
+      <div class="btns">
+        <a class="btn" href="#projetos">Projetos</a>
+        <a class="btn" href="#experiencias">Experiências</a>
+      </div>
+      <div class="img-introducao">
+        <img src="site_em_construcao.png" alt="Site em construção">
+      </div>
+      
+    </section>
+
+    <section id="sobre" class="sobre">
+        <img src="PauloMartins_FotoFormando.jpg" alt="Foto de Paulo Martins" class="img-sobre">
+      <div class="texto-sobre">
+        <h2>Sobre mim</h2>
+      <p>
+        Inicialmente formado em Engenharia de Bioprocessos e Biotecnologia, porém ao longo dos anos fui me inserindo em projetos e trabalhos paralelos e atualmente curso MBA em Engenharia de Software, graduando em Analise e Desenvolvimento de Sistemas. Buscando me aperfeiçoar e aprender mais sobre novas tecnologias e aplicações da programação, inovação, machine learning e inteligencia artificial no mercado.
+      </p>
+      </div>
+      
+    </section>
+
+     <section id="carreira" class="carreira">
+      <h2>Carreira</h2>
+      <div class = "carrossel">
+        <button class="carrossel-prev">&#10094;</button>
+        <div class="cards">
+          <a class="card">
+          <h3>Estágio em Pesquisa e Desenvolvimento</h3>
+          <p>Dez 2023 - Dez 2024</p>
+          <li>Desenvolvimento de dashboards interativos usando Power BI.</li>
+          <li>Extração de dados em banco SQL</li>
+          <li>Automatização em preenchimento de dados para análise</li>
+          </a>
+          <a class="card">
+          <h3>Analista de Qualidade</h3>
+          <p>Dec 2024 - Ago 2025</p>
+          <li>Automatização em extração de dados utilizando macro em Excel e Python (Selenium)</li>
+          <li>Construção de dashboards quinzenais em Tableau, monitorando KPI's de reclamação de consumidor.</li>
+          <li>Extrações de dados diários de KPI's de produção em SQL</li>
+          </a>
+          <a class="card">
+          <h3>Treinamento de LLM</h3>
+          <p>Jan 2025 - Set 2025</p>
+          <li>Treinamento de API em mercado AWS </li>
+          <li>Avaliação de prompt e mudança de script visando melhoria de raciocínio e geração de resposta</li>
+          
+          </a>
+          
+        </div>
+        <button class="carrossel-next">&#10095;</button>
+      </div>
+      
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2>Projetos</h2>
+    
+      <div class = "carrossel">
+        <button class="carrossel-prev">&#10094;</button>
+        <div class="cards">
+          <div class="card">
+            <h3>Agente de Suporte</h3>
+            <p class="cardzinho">Agente conversacional em estilo suporte, utilizando RAG, LLM e ferramentas customizadas via FastAPI</p>
+            <p class="cardzinho">Implementação de APIs com simulação de pedidos e políticas internas, com memória contextual e fluxos de decisão</p>
+            <a href="projeto1.html" class="view">Veja o projeto</a>
+          </div>
+
+          <div class="card">
+            <h3>LLMOps Pipeline - Treinamento, Monitoramento e Deploy com MLflow</h3>
+            <p class="cardzinho">Pipeline completo de LLMOps com fine-tuning via LoRA, versionamento com MLflow e deploy com API Dockerizada.</p>
+            <p class="cardzinho">Criado mecanismo de monitoramento com métricas de latência, perplexidade e qualidade, além de logs estruturados</p>
+            <p class="cardzinho">Set CI/CD com GitHub Actions para automação de testes, build e deploy contínuo com modelo.</p>
+            <a href="projeto2.html" class="view">Veja o projeto</a>
+          </div>
+
+          <div class="card">
+            <h3>Start Menu RAG - Motor Inteligente de Recomendação de Pratos</h3>
+            <p class="cardzinho">Sistema de recomendação de pratos utilizando RAG com embeddings integrado a um modelo generativo.</p>
+            <p class="cardzinho">Utilização de similaridade vetorial para desenvolvimento de ranking de preferencia alimentar, estilo culinário através de filtros.</p>
+            <a href="projeto3.html" class="view">Veja o projeto</a>
+          </div>
+        </div>
+          <button class="carrossel-next">&#10095;</button>
+        
+      </div>
+    </section>
+
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p> Email: paulo.augmartins@gmail.com</p>
+       <div class="contato-bolhas">
+    <!-- Email -->
+          <a href="mailto:paulo.augmartins@gmail.com" class="bolha" title="Email">
+          <i class="fas fa-envelope"></i>
+          </a>
+    <!-- Currículo PDF -->
+          <a href="curriculo.pdf" class="bolha" title="Currículo" target="_blank">
+          <i class="fas fa-file-pdf"></i>
+          </a>
+    <!-- GitHub -->
+          <a href="https://github.com/PauloColodiano" class="bolha" title="GitHub" target="_blank">
+          <i class="fab fa-github"></i>
+          </a>
+    <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/martins-paulo" class="bolha" title="LinkedIn" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+  </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Paulo Colodiano</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
